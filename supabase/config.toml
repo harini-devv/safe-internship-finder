@@ -1,0 +1,4 @@
+project_id = "ntavlbhtatmsidoowevs"
+
+[functions.analyze-offer]
+verify_jwt = false
