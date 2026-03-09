@@ -14,7 +14,48 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      scam_reports: {
+        Row: {
+          company_name: string
+          contact_email: string | null
+          created_at: string
+          description: string
+          id: string
+          internship_title: string
+          risk_level: string
+          scam_type: string
+          updated_at: string
+          user_id: string
+          website_url: string | null
+        }
+        Insert: {
+          company_name: string
+          contact_email?: string | null
+          created_at?: string
+          description: string
+          id?: string
+          internship_title: string
+          risk_level?: string
+          scam_type?: string
+          updated_at?: string
+          user_id: string
+          website_url?: string | null
+        }
+        Update: {
+          company_name?: string
+          contact_email?: string | null
+          created_at?: string
+          description?: string
+          id?: string
+          internship_title?: string
+          risk_level?: string
+          scam_type?: string
+          updated_at?: string
+          user_id?: string
+          website_url?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
