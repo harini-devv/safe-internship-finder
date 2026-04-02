@@ -31,7 +31,8 @@ export default function AuthPage() {
     try {
       if (isSignUp) {
         await signUp(email, password);
-        toast.success("Account created! Check your email to confirm.");
+        toast.success("Account created! You're now signed in.");
+        navigate("/");
       } else {
         await signIn(email, password);
         toast.success("Welcome back!");
